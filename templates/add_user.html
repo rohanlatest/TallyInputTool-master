@@ -1,0 +1,56 @@
+{% extends 'base1.html'%}
+{% load static%}
+
+{% block content %}
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+         
+
+          <!-- content              -->
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Quick Example</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="exampleInputName">Username</label>
+                  <input type="text" class="form-control" id="exampleInputusername1" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputName">Name</label>
+                  <input type="text" class="form-control" id="exampleInputname1" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label>Select Role</label>
+                  <select class="form-control">
+                    <option>----</option>
+                    <option>User</option>
+                    <option>Manager</option>
+                  </select>
+                </div>
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Add User</button>
+              </div>
+            </form>
+          </div>
+
+
+
+
+
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+   
+    {% endblock %}

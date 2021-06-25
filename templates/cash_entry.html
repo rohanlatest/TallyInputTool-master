@@ -1,0 +1,74 @@
+{% extends 'base1.html'%}
+{% load static%}
+
+{% block content %}
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+
+
+          <!-- content              -->
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Quick Example</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="exampleInput">Trasaction Details</label>
+                  <input type="text" class="form-control" id="exampleInputtrans"
+                    placeholder="Enter Transaction details">
+                </div>
+                <!-- Date and time -->
+                <div class="form-group">
+                  <label>Date and time:</label>
+                    <div class="input-group date" id="reservationdatetime" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#reservationdatetime"/>
+                        <div class="input-group-append" data-target="#reservationdatetime" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label>Enter any Credit or Debit</label>
+                  <div class="form-group">
+                    <label for="exampleInputcredit1">Credit</label>
+                    <input type="number" class="form-control" id="exampleInputcredit1" placeholder="credit">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputcredit1">Debit</label>
+                    <input type="number" class="form-control" id="exampleInputcredit1" placeholder="credit">
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-body -->
+
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+
+
+
+
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    
+    {% endblock %}
+
+    {% block script %}
+  <!--Date time-->
+  <script>
+     $(function () {
+    //Date and time picker
+    $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
+     })
+ </script>
+   {% endblock %}
